@@ -1,0 +1,21 @@
+{
+  "name": "Gmail.js",
+  "version": "0.1",
+  "description": "Hello World Gmail chrome extension",
+  "permissions": [
+    "https://think-twise.herokuapp.com/"
+  ],
+  "content_scripts": [
+    {
+      "js": ["jquery-1.10.2.min.js", "main.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "jquery-1.10.2.min.js",
+    "gmail.js",
+    "main.js"
+  ],
+  "manifest_version": 2
+}
+
+// "matches": ["https://mail.google.com/*"],
