@@ -1,10 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="Chart.bundle.min.js"></script>
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="chartBuilder.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <script src="materialize.min.js"></script>
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Think twice</title>
 </head>
 <body>
-
+    <div class="container">
+        <h1 class="title">Think twice 0_0</h1>
+        <div class="row">
+            <div class="col s6">
+                <p class="flow-text analysedText"></p>
+            </div>
+        </div>
+        <div class="row z-depth-1">
+            <div class="col s4">
+                <h4>Emotional tones</h4>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header"><i class="em em-angry"></i>anger</div>
+                        <div class="collapsible-body"><p class="flow-text">Evoked due to injustice, conflict, humiliation, negligence or betrayal. If anger is active, the individual attacks the target, verbally or physically. If anger is passive, the person silently sulks and feels tension and hostility.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="em em-mask"></i>disgust</div>
+                        <div class="collapsible-body"><p class="flow-text">An emotional response of revulsion to something considered offensive or unpleasant. It is a sensation that refers to something revolting.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="em em-fearful"></i>fear</div>
+                        <div class="collapsible-body"><p class="flow-text">A response to impending danger. It is a survival mechanism that is a reaction to some negative stimulus. It may be a mild caution or an extreme phobia.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="em em-grinning"></i>joy</div>
+                        <div class="collapsible-body"><p class="flow-text">Joy or happiness has shades of enjoyment, satisfaction and pleasure. There is a sense of well-being, inner peace, love, safety and contentment.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="em em-disappointed"></i>saddness</div>
+                        <div class="collapsible-body"><p class="flow-text">Indicates a feeling of loss and disadvantage. When a person can be observed to be quiet, less energetic and withdrawn, it may be inferred that sadness exists.</p></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s5 offset-s3">
+                <canvas id="emotionChart" width="400" height="300"></canvas>
+            </div>
+        </div>
+        <div class="row z-depth-1">
+            <div class="col s4">
+                <h4>Language tones</h4>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header"><i class="em em-neckbeard"></i>Analytic</div>
+                        <div class="collapsible-body"><p class="flow-text">A person's reasoning and analytical attitude about things</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="em em-sunglasses"></i>Confidence</div>
+                        <div class="collapsible-body"><p class="flow-text">A persons degree of certainty.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="em em-worried"></i>Tentative</div>
+                        <div class="collapsible-body"><p class="flow-text">A persons degree of inhibition.</p></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s5 offset-s3">
+                <canvas id="languageChart" width="400" height="300"></canvas>
+            </div>
+        </div>
+        <div class="row z-depth-1">
+            <div class="col s4">
+                <h4>Social tones</h4>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header"><i class="em em-open_hands"></i>openness</div>
+                        <div class="collapsible-body"><p class="flow-text">The extent a person is open to experience a variety of activities.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="em em-memo"></i>conscientiousness</div>
+                        <div class="collapsible-body"><p class="flow-text">The tendency to act in an organized or thoughtful way.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="em em-raising_hand"></i>extraversion</div>
+                        <div class="collapsible-body"><p class="flow-text">The tendency to seek stimulation in the company of others.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="em em-relaxed"></i>agreeableness</div>
+                        <div class="collapsible-body"><p class="flow-text">The tendency to be compassionate and cooperative towards others.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="em em-snowman"></i>emotional range</div>
+                        <div class="collapsible-body"><p class="flow-text">The extent a person's emotion is sensitive to the environment</p></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s5 offset-s3">
+                <canvas id="socialChart" width="400" height="300"></canvas>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

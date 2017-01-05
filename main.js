@@ -46,4 +46,4 @@ var retrieveEmailBody = function(divId){
     console.log("id is:" + id);
 }
 
-refresh(main);
+//refresh(main);
