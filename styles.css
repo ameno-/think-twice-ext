@@ -1,0 +1,62 @@
+.center-align{
+    vertical-align: middle;
+}
+
+.sentenceAnalysis span {
+    text-decoration: underline;
+}
+
+/*Emotional Colors*/
+.anger {
+    color: #EA3546;
+}
+
+.disgust {
+    color: #C3F73A;
+}
+
+.fear {
+    color: #000000;
+}
+
+.sadness {
+    color: #0A2463;
+}
+
+.joy {
+    color: #F9C80E;
+}
+
+/*Language Colors*/
+.analytical {
+    color: #0A2463;
+}
+
+.confident {
+    color: #EA3546;
+}
+
+.tentative {
+    color: #000000;
+}
+
+/*Social Colors*/
+.openness {
+    color: #EA3546;
+}
+
+.conscientiousness {
+    color: #C3F73A;
+}
+
+.extraversion {
+    color: #000000;
+}
+
+.agreeableness {
+    color: #0A2463;
+}
+
+.emotional-range {
+    color: #F9C80E;
+}

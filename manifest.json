@@ -10,6 +10,11 @@
   "background": {
     "scripts": ["jquery-1.10.2.min.js","app.js"]
   },
+  "icons": {
+    "16": "icon-tiny.png",
+    "48": "icon-small.png",
+    "128": "icon-large.png"
+  },
   "web_accessible_resources": [
     "jquery-1.10.2.min.js",
     "app.js",
