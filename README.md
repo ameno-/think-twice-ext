@@ -1,14 +1,14 @@
-# Gmail.js Chrome Extension
+# Think twice 0_0
 
-Hello world chrome extension using gmail.js
-
-This is a sample chome extension that uses gmail.js to build apps on top of Gmail.
-
-The manifest in this repo bypasses the new Content Security Policy (CSP) enforced by Gmail.
-
-### Please use the latest `gmail.js` file from the original repo linked below
-
-**http://github.com/kartiktalwar/gmail.js**
+[[https://github.com/ameno-/think-twice-ext/blob/master/promo/promo.png|alt=promo]]
 
 
+![robot](https://postimg.org/image/rqicsa0dr/)
 
+use the power of AI and Watson to gain insights into what you read write
+
+## Just highlight and right-click
+
+## Select "Think twice"
+
+## Watch the magic
