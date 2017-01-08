@@ -1,7 +1,7 @@
 {
-  "name": "think twise 0_0",
+  "name": "think twice 0_0",
   "version": "0.1",
-  "description": "use the power of AI to gain insights into what you read, and what you write",
+  "description": "use the power of AI and Watson to gain insights into what you read write",
   "permissions": [
     "https://think-twise.herokuapp.com/",
     "contextMenus",
